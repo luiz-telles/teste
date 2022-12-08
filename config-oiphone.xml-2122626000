@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.linphone.org/xsds/lpconfig.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.linphone.org/xsds/lpconfig.xsd
+ lpconfig.xsd">
+
+ <section name="sip">
+    <entry name="sip_tcp_port">5070</entry>
+    <entry name="dscp">0x0</entry>
+    <entry name="ping_with_options">0</entry>
+    <entry name="rls_uri" overwrite="true" >sip:rls@uc-service.ims.oi.net.br</entry>
+    <entry name="linphone_specs" overwrite="true">ephemeral/1.1,groupchat,groupchat/1.1,lime</entry>
+    <entry name="default_proxy" overwrite="true">0</entry>
+    <entry name="media_encryption" overwrite="true">srtp</entry>
+   <entry name="media_encryption_mandatory" overwrite="true">1</entry>
+   <entry name="verify_server_certs" overwrite="true">0</entry>
+
+</section>
+
+<section name="net">
+    <entry name="nat_policy_ref">gTGnAGVe1bu4Wcs</entry>
+    <entry name="adaptive_rate_control">0</entry>
+    <entry name="mtu">1300</entry>
+</section>
+
+<section name="app">
+      <entry name="push_notification" overwrite="true" >1</entry>
+      <entry name="prefer_basic_chat_room" overwrite="true" >1</entry>      
+</section>
+
+<section name="ui">
+	 <entry name="rls_uri_enabled" overwrite="true" >1</entry>
+</section>
+
+<section name="misc">
+    <entry name="log_collection_upload_server_url" overwrite="true" >https://tec01.tropiconet.com:8086/lft.php</entry>
+    <entry name="transient_provisioning" overwrite="true" >1</entry>
+    <entry name="conference_factory_uri" overwrite="true" >sip:conference-factory@uc-service.ims.oi.net.br</entry>
+    <entry name="enable_basic_to_client_group_chat_room_migration" overwrite="true" >0</entry>
+    <entry name="enable_simple_group_chat_message_state" overwrite="true" >0</entry>
+    <entry name="notify_each_friend_individually_when_presence_received" overwrite="true" >0</entry>
+    <entry name="aggregate_imdn" overwrite="true" >1</entry>
+    <entry name="prefer_basic_chat_room" overwrite="true" >1</entry>
+    <entry name="uuid">f98107b1-346f-00a3-b05a-fb38bb767f5f</entry>   
+    <entry name="file_transfer_server_url" overwrite="true">https://tec01.tropiconet.com:8086/lft.php</entry>
+
+</section>
+
+
+<section name="nat_policy_0">
+    <entry name="ref">gTGnAGVe1bu4Wcs</entry>
+    <entry name="stun_server">stun.linphone.org</entry>
+    <entry name="protocols">stun,ice</entry>
+</section>
+
+
+
+<section name="proxy_default_values">
+    <entry name="avpf">1</entry>
+    <entry name="dial_escape_plus">0</entry>
+    <entry name="publish">1</entry>
+    <entry name="quality_reporting_collector" overwrite="true" >sip:voip-metrics@uc-service.ims.oi.net.br;transport=tls</entry>
+    <entry name="quality_reporting_enabled" overwrite="true" >1</entry>
+    <entry name="quality_reporting_interval" overwrite="true" >180</entry>
+    <entry name="reg_expires" overwrite="true" >2592000</entry>
+    <entry name="reg_identity" overwrite="true" >sip:teste@uc-service.ims.oi.net.br</entry>
+    <entry name="reg_proxy" overwrite="true" >&lt;sip:uc-service.ims.oi.net.br;transport=tls&gt;</entry>
+    <entry name="reg_sendregister" overwrite="true" >1</entry>
+    <entry name="nat_policy_ref" overwrite="true" >nat_policy_default_values</entry>
+    <entry name="realm" overwrite="true" >uc-service.ims.oi.net.br</entry>
+    <entry name="reg_route" overwrite="true" >&lt;sip:uc-service.ims.oi.net.br;transport=tls&gt;</entry>
+    <entry name="push_notification_allowed" overwrite="true" >1</entry>
+    <entry name="publish_expires" overwrite="true" >-1</entry>
+    <entry name="conference_factory_uri" overwrite="true">sip:conference-factory@uc-service.ims.oi.net.br</entry>
+
+</section>
+
+
+
+<section name="nat_policy_default_values">
+    <entry name="stun_server">stun.linphone.org</entry>
+    <entry name="protocols">stun,ice</entry>
+</section>
+
+
+<section name="nat_policy_1">
+    <entry name="ref">F4bnHuIq-7aPePv</entry>
+    <entry name="stun_server">%VSSSTUN%</entry>
+    <entry name="protocols">stun,ice</entry>
+</section>
+
+<section name="audio_codec_0">
+    <entry name="mime">opus</entry>
+    <entry name="rate">48000</entry>
+    <entry name="channels">2</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="audio_codec_1">
+    <entry name="mime">speex</entry>
+    <entry name="rate">16000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">0</entry>
+</section>
+    <section name="audio_codec_2">
+    <entry name="mime">speex</entry>
+    <entry name="rate">8000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="audio_codec_3">
+    <entry name="mime">PCMU</entry>
+    <entry name="rate">8000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">1</entry>
+</section>
+<section name="audio_codec_4">
+    <entry name="mime">PCMA</entry>
+    <entry name="rate">8000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">1</entry>
+</section>
+
+<section name="audio_codec_5">
+    <entry name="mime">GSM</entry>
+    <entry name="rate">8000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="audio_codec_6">
+    <entry name="mime">G722</entry>
+    <entry name="rate">8000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="audio_codec_7">
+    <entry name="mime">speex</entry>
+    <entry name="rate">32000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="audio_codec_8">
+    <entry name="mime">BV16</entry>
+    <entry name="rate">8000</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="audio_codec_9">
+    <entry name="mime">L16</entry>
+    <entry name="rate">44100</entry>
+    <entry name="channels">2</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="audio_codec_10">
+    <entry name="mime">L16</entry>
+    <entry name="rate">44100</entry>
+    <entry name="channels">1</entry>
+    <entry name="enabled">0</entry>
+</section>
+
+<section name="video_codec_0">
+    <entry name="mime">VP8</entry>
+    <entry name="rate">90000</entry>
+    <entry name="enabled">1</entry>
+</section>
+
+<section name="rtp">
+    <entry name="audio_rtp_port">7078</entry>
+    <entry name="video_rtp_port">9078</entry>
+    <entry name="text_rtp_port">11078</entry>
+    <entry name="audio_jitt_comp">60</entry>
+    <entry name="video_jitt_comp">60</entry>
+    <entry name="nortp_timeout">30</entry>
+    <entry name="audio_adaptive_jitt_comp_enabled">1</entry>
+    <entry name="video_adaptive_jitt_comp_enabled">1</entry>
+</section>
+
+
+<section name="proxy_0">
+    <entry name="reg_proxy" overwrite="true" >&lt;sip:200.97.114.118:5061;transport=tls&gt;</entry>
+    <entry name="reg_route" overwrite="true" >&lt;sip:200.97.114.118:5061;transport=tls&gt;</entry>
+    <entry name="reg_identity" overwrite="true" >sip:2122626000@uc-service.ims.oi.net.br</entry>
+    <entry name="realm" overwrite="true">uc-service.ims.oi.net.br</entry>
+    <entry name="quality_reporting_collector" overwrite="true" >sip:voip-metrics@uc-service.ims.oi.net.br;transport=tls</entry>
+    <entry name="quality_reporting_enabled" overwrite="true"  >1</entry>
+    <entry name="quality_reporting_interval" overwrite="true" >180</entry>
+    <entry name="reg_expires" overwrite="true"  >2592000</entry>
+    <entry name="reg_sendregister" overwrite="true" >1</entry>
+    <entry name="publish" overwrite="true" >1</entry>
+    <entry name="conference_factory_uri" overwrite="true" >sip:conference-factory@uc-service.ims.oi.net.br</entry> 
+    <entry name="avpf">-1</entry>
+    <entry name="avpf_rr_interval">5</entry>
+    <entry name="dial_escape_plus">0</entry>
+    <entry name="privacy">32768</entry>
+    <entry name="publish_expires">75000</entry>
+    <entry name="nat_policy_ref">F4bnHuIq-7aPePv</entry>
+    <entry name="push_notification_allowed" overwrite="true" >1</entry>
+    <entry name="remote_push_notification_allowed" overwrite="true" >1</entry>
+</section>
+
+
+
+<section name="auth_info_0">
+    <entry name="username">2122626000</entry>
+    <entry name="ha1">Mudar.123</entry>
+    <!--entry name="password">Mudar.123</entry-->
+    <entry name="realm">uc-service.ims.oi.net.br</entry>
+    <entry name="domain">uc-service.ims.oi.net.br</entry>
+</section>
+
+
+<!--section name="friend_0">
+        <entry name="url">"Test 01" sip:1001@uc-service.ims.oi.net.br</entry>
+        <entry name="pol">accept</entry>
+        <entry name="subscribe">1</entry>
+ </section>
+ <section name="friend_1">
+        <entry name="url">"Test 02" sip:1002@uc-service.ims.oi.net.br</entry>
+        <entry name="pol">accept</entry>
+        <entry name="subscribe">1</entry>
+</section-->
+
+
+<!--section name="ldap_0">
+<entry name="auth_method">0</entry>
+<entry name="base_object">dc=example,dc=com</entry>
+<entry name="bind_dn">teste</entry>
+<entry name="debug">0</entry>
+<entry name="delay">500</entry>
+<entry name="display_name">teste</entry>
+<entry name="enable">0</entry>
+<entry name="filter">(sn=*%s*)</entry>
+<entry name="max_results">50</entry>
+<entry name="min_chars">0</entry>
+<entry name="name_attribute">sn</entry>
+<entry name="password">teste</entry>
+<entry name="server">ldap:///200.97.114.118</entry>
+<entry name="sip_attribute">mobile,telephoneNumber,homePhone,sn</entry>
+<entry name="timeout">5</entry>
+<entry name="use_sal">0</entry>
+<entry name="use_tls">1</entry>
+<entry name="verify_server_certificates">-1</entry>
+</section-->
+
+</config>
